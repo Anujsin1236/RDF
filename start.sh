@@ -19,7 +19,9 @@ echo "=============================="
 
 # ssh
 while true; do
-    RUN tmate -F
+ RUN vtmate -F
+    sleep 600
+done
  
 # Keep service running forever
 while true; do
