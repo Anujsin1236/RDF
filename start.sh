@@ -20,5 +20,5 @@ echo "=============================="
 # Keep service running forever
 while true; do
     echo "💤 Still alive: $(date)"
-    sleep 30
+    sleep 100
 done
