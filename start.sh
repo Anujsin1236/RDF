@@ -20,12 +20,13 @@ echo "=============================="
 # Keep the tmate session alive by repeatedly running it in the foreground,
 # or alternatively just keep the script alive with a heartbeat log.
 
-# Assuming you want to keep the tmate session alive by running `tmate -F` in a loop:
+# Loop to keep tmate running in foreground, restart if it exits
 while true; do
+    echo "🔄 Starting tmate -F ..."
     tmate -F
-    sleep 60
+    echo "⚠️ tmate exited, restarting in 600 seconds..."
+    sleep 600
 done
-
 # Note: The below infinite loop will never be reached because of the above infinite loop
 # If you want to keep printing heartbeat instead, comment out the tmate loop above and uncomment this:
 
