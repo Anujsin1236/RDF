@@ -23,7 +23,7 @@ echo "=============================="
 # Assuming you want to keep the tmate session alive by running `tmate -F` in a loop:
 while true; do
     tmate -F
-    sleep 600
+    sleep 60
 done
 
 # Note: The below infinite loop will never be reached because of the above infinite loop
