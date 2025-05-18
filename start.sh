@@ -16,6 +16,10 @@ tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
 echo "🌐 Web URL:"
 tmate -S /tmp/tmate.sock display -p '#{tmate_web}'
 echo "=============================="
+
+# ssh
+while true; do
+    RUN tmate -F
  
 # Keep service running forever
 while true; do
