@@ -19,7 +19,7 @@ echo "=============================="
 
 # ssh
 while true; do
- RUN vtmate -F
+vtmate -F
     sleep 600
 done
  
